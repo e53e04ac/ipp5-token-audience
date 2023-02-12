@@ -27,7 +27,7 @@ graph RL;
   A ----> B_3;
   A ----> B_4;
   A ----> B_5;
-  click B_0 "https://github.com/e53e04ac/base/tree/9b8c78be45949cb5921608b89e923828da6d41f3";
+  click B_0 "https://github.com/e53e04ac/base/tree/f060ddbd934ff5c9bfe1294358a91fb01051345a";
   click B_1 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
   click B_2 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_3 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
@@ -65,8 +65,9 @@ graph RL;
 ~~~~~ mermaid
 graph RL;
   subgraph "e53e04ac/ipp5-token-audience";
-    E_0(["type Ipp5TokenAudience"]);
-    E_1(["const Ipp5TokenAudience"]);
+    E_0(["namespace Ipp5TokenAudience"]);
+    E_1(["type Ipp5TokenAudience"]);
+    E_2(["const Ipp5TokenAudience"]);
   end;
   M(["index.d.ts"])
   subgraph "joi";
@@ -85,4 +86,5 @@ graph RL;
   M ----> I_2_1;
   E_0 ----> M;
   E_1 ----> M;
+  E_2 ----> M;
 ~~~~~
