@@ -27,12 +27,12 @@ graph RL;
   A ----> B_3;
   A ----> B_4;
   A ----> B_5;
-  click B_0 "https://github.com/e53e04ac/base/tree/f060ddbd934ff5c9bfe1294358a91fb01051345a";
-  click B_1 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
+  click B_0 "https://github.com/e53e04ac/base/tree/ddd2c718686c0629e497f4fa610d1979aac40c8a";
+  click B_1 "https://github.com/e53e04ac/hold/tree/49707680ccdf4c5673f64ff0bab30f408269b328";
   click B_2 "https://www.npmjs.org/package/joi/v/17.7.1";
   click B_3 "https://www.npmjs.org/package/jsonwebtoken/v/9.0.0";
   click B_4 "https://www.npmjs.org/package/@types/jsonwebtoken/v/9.0.1";
-  click B_5 "https://www.npmjs.org/package/@types/node/v/18.13.0";
+  click B_5 "https://www.npmjs.org/package/@types/node/v/18.14.0";
 ~~~~~
 
 ~~~~~ mermaid
