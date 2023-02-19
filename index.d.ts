@@ -6,17 +6,11 @@
 
 import { default as Joi } from 'joi';
 
-import { Base } from 'base';
+import { EventEmitter } from 'event-emitter';
 import { Get } from 'hold';
 import { ValueOrGet } from 'hold';
 
 export declare namespace Ipp5TokenAudience {
-
-    type Options = {
-        readonly idpTokenUrn: ValueOrGet<string>;
-        readonly apiUrn: ValueOrGet<string>;
-        readonly idpTokenPublicKey: ValueOrGet<string>;
-    };
 
     type TokenPayload = {
         readonly iss: string;
@@ -28,6 +22,14 @@ export declare namespace Ipp5TokenAudience {
         readonly jti: string;
         readonly clientId: string;
     };
+
+    type Options = {
+        readonly idpTokenUrn: ValueOrGet<string>;
+        readonly apiUrn: ValueOrGet<string>;
+        readonly idpTokenPublicKey: ValueOrGet<string>;
+    };
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
@@ -62,7 +64,7 @@ export declare namespace Ipp5TokenAudience {
         };
     };
 
-    type Self = Base & {
+    type Self = EventEmitter<EventSpecs> & {
         readonly _Ipp5TokenAudience: Get<_Self>;
         readonly verify: {
             (params: {

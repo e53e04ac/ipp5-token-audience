@@ -7,7 +7,7 @@
 import { default as Joi } from 'joi';
 import { default as jsonwebtoken } from 'jsonwebtoken';
 
-import { Base } from 'base';
+import { EventEmitter } from 'event-emitter';
 import { hold } from 'hold';
 import { unwrap } from 'hold';
 
@@ -100,7 +100,7 @@ const constructor = ((options) => {
 
     /** @type {import('.').Ipp5TokenAudience.Self} */
     const self = ({
-        ...Base({}),
+        ...EventEmitter({}),
         _Ipp5TokenAudience: (() => {
             return _self;
         }),
