@@ -10,10 +10,10 @@ import { Ipp5TokenAudience } from 'e53e04ac/ipp5-token-audience';
 
 ~~~~~ mermaid
 graph RL;
-  A(["package.json"]);
+  A["package.json\npackage-lock.json"];
   subgraph "dependencies";
-    B_0(["e53e04ac/event-emitter"]);
-    B_1(["e53e04ac/hold"]);
+    B_0(["event-emitter"]);
+    B_1(["hold"]);
     B_2(["joi"]);
     B_3(["jsonwebtoken"]);
   end;
@@ -21,18 +21,34 @@ graph RL;
     B_4(["@types/jsonwebtoken"]);
     B_5(["@types/node"]);
   end;
+  subgraph "github";
+    C_0(["e53e04ac/event-emitter\n98fd492f5a6e31cd646d4b79e70035061165871f"]);
+    C_1(["e53e04ac/hold\n6845a848f97733b8cd8a34bfc03c3bf040818aa8"]);
+  end;
+  subgraph "npmjs";
+    C_2(["joi\n17.8.3"]);
+    C_3(["jsonwebtoken\n9.0.0"]);
+    C_4(["@types/jsonwebtoken\n9.0.1"]);
+    C_5(["@types/node\n18.14.1"]);
+  end;
   A ----> B_0;
   A ----> B_1;
   A ----> B_2;
   A ----> B_3;
   A ----> B_4;
   A ----> B_5;
-  click B_0 "https://github.com/e53e04ac/event-emitter/tree/faf256d4d2350ffa0af1fed794236faa4f0740a1";
-  click B_1 "https://github.com/e53e04ac/hold/tree/443c2e801bbe20409c761994a91fa88fb6044602";
-  click B_2 "https://www.npmjs.com/package/joi/v/17.8.3";
-  click B_3 "https://www.npmjs.com/package/jsonwebtoken/v/9.0.0";
-  click B_4 "https://www.npmjs.com/package/@types/jsonwebtoken/v/9.0.1";
-  click B_5 "https://www.npmjs.com/package/@types/node/v/18.14.1";
+  B_0 ----> C_0;
+  B_1 ----> C_1;
+  B_2 ----> C_2;
+  B_3 ----> C_3;
+  B_4 ----> C_4;
+  B_5 ----> C_5;
+  click C_0 "https://github.com/e53e04ac/event-emitter/tree/98fd492f5a6e31cd646d4b79e70035061165871f";
+  click C_1 "https://github.com/e53e04ac/hold/tree/6845a848f97733b8cd8a34bfc03c3bf040818aa8";
+  click C_2 "https://www.npmjs.com/package/joi/v/17.8.3";
+  click C_3 "https://www.npmjs.com/package/jsonwebtoken/v/9.0.0";
+  click C_4 "https://www.npmjs.com/package/@types/jsonwebtoken/v/9.0.1";
+  click C_5 "https://www.npmjs.com/package/@types/node/v/18.14.1";
 ~~~~~
 
 ~~~~~ mermaid
@@ -40,7 +56,7 @@ graph RL;
   subgraph "e53e04ac/ipp5-token-audience";
     E_0(["Ipp5TokenAudience"]);
   end;
-  M(["index.mjs"])
+  M["index.mjs"]
   subgraph "joi";
     I_0_0(["default"]);
   end;
@@ -69,7 +85,7 @@ graph RL;
     E_1(["type Ipp5TokenAudience"]);
     E_2(["const Ipp5TokenAudience"]);
   end;
-  M(["index.d.ts"])
+  M["index.d.ts"]
   subgraph "joi";
     I_0_0(["default"]);
   end;
