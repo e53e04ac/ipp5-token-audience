@@ -26,7 +26,7 @@
   "dependencies": {
     "event-emitter": "github:e53e04ac/event-emitter",
     "hold": "github:e53e04ac/hold",
-    "joi": "^17.8.3",
+    "joi": "^17.8.4",
     "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
