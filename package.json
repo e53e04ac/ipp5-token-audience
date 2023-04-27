@@ -30,7 +30,7 @@
     "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.1",
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^18.11.19"
   }
 }
